@@ -1,0 +1,208 @@
+/*for first modal on screen loading */
+
+/*fixed background*/
+
+.container-fluid {
+	padding: 0px;
+}
+
+.navbar {
+	padding-right: 10px;
+}
+/*for logo  */
+
+button {
+	outline: none;
+	border: 1px solid gray;
+}
+
+.btn-default:active {
+	color: white;
+	background-color: #0066ff;
+}
+
+
+.btn-default:hover {
+	color: #0066ff;
+	border: 1px solid #0066ff;
+	background-color:white;
+}
+
+
+
+header {
+	background-color: rgba(0, 0, 0, 0.7);
+	padding-top:2%;
+	padding-bottom:1%;
+	padding-left:1%;
+	margin-top: 3%;
+}
+
+#logoimg{
+	width:10%;
+	height:10%;
+	padding-left: 10px;
+}
+
+/*for the second carousel  */
+.carlis {
+	width: 100%;
+	height: 150%;
+}
+
+
+
+.Carousel-Image {
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	height: 10%;
+}
+
+.btn-ns-filter {
+	font-size: 16px;
+	padding: 10px 20px 10px 20px;
+	border: 1px solid gray;
+}
+
+footer {
+	background-color:black;
+	margin-left:0%;
+	margin-right:0%;
+	padding-top:1%; 
+	padding-bottom:1%;
+	color:white;
+	font-size:125%;
+}
+
+.forlink{
+color:white;
+}
+
+
+.forsocial{
+	width:100%;
+	height:100%;
+	color:white;
+	padding-right:5%;
+}
+
+.but2 {
+	background-color: #B22222;
+}
+
+#searchBox {
+	height:40px;
+	width:60%;
+	padding:10px;
+	font-size: 20px;
+	border: 1px solid #cc0000;
+	outline: none;
+}
+
+#searchButton {
+	font-size: 30px;
+	height: 40px;
+	border: 1px solid #cc0000;
+	background-color: #cc0000;
+	color: white;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+.glyphicon-search {
+	top: 0px;
+}
+
+#movieText {
+	font-size: 20px;
+	border-bottom: 2px solid #cc0000;
+}
+
+
+/* #main-NowShowing, #main-ComingSoon #main-NextChange {
+	background-color: #f2f2f2;
+} */
+
+
+.mv-icon {
+	position: relative;
+	border-bottom: 3px solid #49ba8e;
+	height: 100%;
+	width: 100%; 
+}
+
+
+.mv-icon:hover {
+	background:rgba(0, 0, 0, 0.5);
+}
+
+
+.movie-tile {
+	text-align: center;
+	margin: 1%;
+	background-color: white;
+	padding: 0%;
+	margin: 4%;
+
+}
+
+.movie-tile:hover .hover-btn {
+	display:block;
+	/* background:rgba(0, 0, 0, 0.5); */
+}
+
+
+.hover-btn {
+	display:none;
+}
+
+
+
+.btn-play {
+	position: absolute;
+	top: 30%;
+	left: 30%;
+}
+
+.btn-info {
+	position: absolute;
+	top: 30%;
+	left: 60%;
+	background-color: transparent;
+}
+
+.btn-info:hover {
+	background-color: transparent;
+}
+
+.glyphicon-play-circle{
+	font-size: 50px;
+	color: #49ba8e;
+}
+
+.glyphicon-info-sign {
+ 	font-size: 50px;
+	color: #49ba8e;
+ }
+
+
+
+/*second carousel images button for book now  */
+.btn-book {
+	background-color: #cc0000;
+	color: white;
+	width: 100%;
+	height: 40px;
+	font-weight: bold;
+	border:none;
+}
+
+
+
+
+#search-movie-filter {
+	width: 80%;
+	border:1px solid #0099ff;
+	padding-left:2%;
+}

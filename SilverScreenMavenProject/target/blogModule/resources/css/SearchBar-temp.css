@@ -1,0 +1,75 @@
+* {
+	box-sizing: border-box;
+}
+
+header {
+	background-color: rgba(0, 0, 0, 0.7);
+	padding-top:2%;
+	padding-bottom:1%;
+	padding-left:1%;
+	margin-top: 3%;
+}
+
+button {
+	outline: none;
+	border: 1% solid blue;
+}
+
+.btn-default:active {
+	color: white;
+	background-color: #0066ff;
+}
+
+
+.btn-default:hover {
+	color: #0066ff;
+	border: 1% solid #0066ff;/*1px*/;
+}
+
+table {
+	margin: 1%;/*20px;*/
+	margin-bottom:3%;
+}
+
+.btn-sub-filter {
+	margin-right: 1%; /*5px;*/
+	border-radius: 40%; /*25px;*/
+	background-color: white;
+}
+
+
+
+.btn-main-filter {
+	margin-right: 1%; /*2px;*/
+	padding: 2% 5% 2% 5%; /*10px 20px 10px 20px;*/ /*t r b l*/
+}
+
+
+#searchBox {
+	height: 10%; /*40px;*/
+	width:60%;
+	padding: 1%; /*10px;*/
+	font-size: 95%; /*20px;*/
+	border: 1% solid #cc0000;
+	outline: none;
+}
+
+#searchButton {
+	font-size: 90%; /*30px;*/
+	height: 100%; /*40px;*/
+	border: 1% solid #cc0000;
+	background-color: #cc0000;
+	color: white;
+	padding-left: 2%;
+	padding-right: 8%;
+}
+
+.glyphicon-search {
+	top: 0%;
+}
+
+#logoimg{
+	width:10%;
+	height:10%;
+	padding-left: 1%; /* 10px; */
+}

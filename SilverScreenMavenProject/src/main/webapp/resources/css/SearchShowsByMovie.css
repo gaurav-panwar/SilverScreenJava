@@ -1,0 +1,145 @@
+/*for first modal on screen loading */
+
+/*fixed background*/
+html {
+	background-color: #f1f1f1;
+}
+
+.container-fluid {
+	padding: 0px;
+}
+/*for logo  */
+header {
+	background-color: rgba(0, 0, 0, 0.7);
+	padding-top:2%;
+	padding-bottom:1%;
+	padding-left:1%;
+	margin-top: 3%;
+	margin-right:3%;
+	position:relative;
+}
+
+.modal-start {
+	margin-top: 3%;
+	margin-right: 5%;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 30%;
+}
+
+#logoimg {
+	width: 10%;
+	height: 10%;
+	padding-left: 10px;
+}
+
+.lasttab {
+	background-color: black;
+	margin-left: 0%;
+	margin-right: 0%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	color: white;
+	font-size: 125%;
+}
+
+.forlink {
+	color: white;
+}
+
+.forsocial {
+	width: 220%;
+	height: 220%;
+	color: white;
+	padding: 5%;
+}
+
+#searchBox {
+	height: 40px;
+	width: 60%;
+	padding: 10px;
+	font-size: 20px;
+	border: 1px solid #cc0000;
+	outline: none;
+}
+
+#searchButton {
+	font-size: 30px;
+	height: 40px;
+	padding-left: 8%;
+	padding-right: 8%;
+	border: 1px solid #cc0000;
+	background-color: #cc0000;
+	color: white;
+}
+
+.glyphicon-search {
+	top: 0px;
+}
+
+.row {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.container-fluid .jumbotron {
+	background: #061532;
+	padding: 2%;
+	border-radius: 0px;
+	padding-bottom: 0%;
+	margin-bottom: 0px;
+}
+
+#movie_title a :hover {
+	text-decoration: none;
+}
+
+.table>tbody>tr>td {
+	border: none;
+}
+
+.table {
+	background: #061532;
+}
+
+#certification, #genre {
+	color: gray;
+	font-size: large;
+	font-family: monospace;
+	border: 2px solid gray;
+	text-align: center;
+	border-radius: 10px;
+}
+
+#release_date, #duration {
+	color: gray;
+	font-size: large;
+	font-family: monospace;
+	padding: 4px;
+}
+
+#today_col, #tom_col, #after_col{
+	text-align: center;
+	font-size: large;
+	padding: 0px;
+	margin: 0px;
+	font-weight: bold;
+	color: #49ba8e;
+}
+
+.showtable, .showtable>tbody>tr {
+	border: 1px solid #f1f1f1;
+}
+
+#cast {
+	color: #49ba8e;
+	font-size: small;
+}
+
+.jumbotron p {
+	font-size: small;
+}
+
+#showtable tr td :HOVER {
+	color: #49ba8e;
+}
+

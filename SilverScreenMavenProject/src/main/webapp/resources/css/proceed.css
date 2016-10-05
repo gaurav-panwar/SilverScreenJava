@@ -1,0 +1,155 @@
+@CHARSET "ISO-8859-1";
+.back{
+			padding:0px;
+			height: 100%;
+			background-color: #f2f2f2;
+		}
+		.row{
+			margin: 0;
+		}
+		.header{
+			width: 100%;
+			height: auto;
+			background-color: #1f2533;
+		}
+		.movie_info{
+			padding: 10px 20px 10px 50px;
+			color: #49ba8e;
+			width: 100%;
+		}
+		.movie_name{
+			margin-top: 10px;
+		}
+		.movie_detail{
+			margin-bottom: 0px;
+		}
+		.pay{
+			height: 400px;
+			background-color: transparent;
+		}
+		.summary{
+
+			padding-top: 30px;
+			background-color: white;
+
+		}
+		.glyphicon.glyphicon-chevron-left{
+			position: absolute;
+			top: 37px;
+			left: 10px;
+			font-size: 30px;
+			color: #f2f2f2;
+		}
+		button.accordion {
+			background-color: #cccccc;
+			color: #444;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+			transition: 0.4s;
+		}
+
+		button.accordion.active, button.accordion:hover {
+			background-color: #49ba8e;
+		}
+
+		button.accordion:after {
+			content: '\02795';
+			font-size: 13px;
+			color: #777;
+			float: right;
+			margin-left: 5px;
+		}
+
+		button.accordion.active:after {
+			content: "\2796";
+		}
+
+		div.panel {
+			padding: 10 18px;
+			margin-bottom: 0px;
+			background-color: white;
+			max-height: 0;
+			overflow: hidden;
+			transition: 0.6s;
+			opacity: 0;
+		}
+
+		div.panel.show {
+			opacity: 1;
+			max-height: 500px;
+			padding: 10px 20px,10px,20px;
+		}
+		.f{
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-left: 10px;
+			padding-right: 10px;
+
+		}
+		
+		.form-control{
+			padding: 10px;
+		}
+		.placeholder{
+			color: black;
+		}
+		.form-control{
+			padding: 10px 10px 0px 10px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		.ff{
+			text-align: center;
+			margin-top: 0px;
+			padding-top: 0px;
+			font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		}
+		.total{
+			background-color: orange;
+			margin:20px 0 20px 0;
+		}
+		.no_tickets{
+			font-size: 15px;
+		}
+		@media(max-width: 768px )
+		{
+			h2{
+				font-size: 1.8em;
+			}
+			h4{
+				font-size: 1.4em;
+			}
+		}
+		@media(min-width:768px )and(max-width: 992px )
+		{
+			h2{
+				font-size: 2.1em;
+			}
+			h4{
+				font-size: 1.7em;
+			}
+		}
+		@media(min-width: 992px )and(max-width: 1200px)
+		{
+			h2{
+				font-size: 2.4em;
+			}
+			h4{
+				font-size: 2em;
+			}
+		}
+		@media(min-width: 1200px )
+		{
+			h2{
+				font-size: 2.6em;
+			}
+			h4{
+				font-size: 2.3 em;
+			}
+		}

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/4cac0da64a.js"></script>
+
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#myModal").modal('show');
+
+		$("#enter-button").click(function() {
+			$("#location").html($("#locate").val());
+
+		});
+	});
+</script>
+
+<style>
+/*for first modal on screen loading */
+.modal-dialog {
+	margin-top: 3%;
+	margin-right: 5%;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 20%;
+}
+
+.navbar {
+	margin: 0%;
+	padding: 0%;
+}
+/*fixed background*/
+body {
+	background-image: url("../images/collage.jpg");
+	background-attachment: fixed;
+	font-family: Georgia, serif;
+	background-position: center;
+}
+
+/*for logo background */
+.logo {
+	background-color: #E81313;
+	padding-top: 5%;
+	padding-bottom: 1%;
+	/* padding-left: 1%; */
+	margin: 0%;
+}
+/*for logo image  */
+.logoimg {
+	width: 10%;
+	height: 10%;
+}
+
+/*for the second carousel  */
+.carlis {
+	width: 100%;
+	heigth: 150%;
+}
+/*for second carousel images glyphicon placing*/
+.scan1 {
+	
+}
+/*second carousel images button for book now  */
+.but {
+	background-color: red;
+	color: white;
+}
+
+.row {
+	margin-left: 0%;
+	margin-right: 0%;
+}
+
+.firstcarouselimage {
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	height: 50%;
+}
+/* footer */
+.lasttab {
+	background-color: black;
+	margin-left: 0%;
+	margin-right: 0%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	color: white;
+	font-size: 125%;
+}
+/*last footer links  */
+.forlink {
+	color: white;
+}
+/*footer social  */
+.forsocial {
+	width: 220%;
+	height: 220%;
+	color: white;
+	padding: 3%;
+}
+/*for search button  */
+.but2 {
+	background-color: #B22222;
+}
+
+header {
+	background-color: #061532;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+}
+
+#logoimg {
+	width: 60%;
+	height: 60%;
+}
+
+#searchBox {
+	/* height: 30%;
+	
+	padding:1%;*/
+	font-size: 190%;
+	height: 150%;
+	width: 80%;
+	/* 	border: 5% solid #cc0000; */
+	/* outline: none; */
+}
+
+.gs {
+	display: inline;
+}
+
+.glyphicon-search {
+	/* margin-top:200%; */
+	padding-left: 1%;
+	font-size: 190%;
+	/* height: 50%;
+	width: 50%; */
+	/* padding-left: 8%;
+	padding-right: 8%;
+	border: 1px solid #cc0000; */
+	background-color: #cc0000;
+	color: white;
+	display: inline;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<!--div for modal  -->
+		<div class="modal fade" id="myModal" role="dialog"
+			data-backdrop="static" data-keyboard="false">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+
+					<div class="modal-body">
+						<!-- <p>
+							Enter the city:<br> <input id="locate" type="text"
+								style="width: 80%;" placeholder="enter city"> <br>
+							<button type="button" id="enter-button" data-dismiss="modal">Enter</button>
+						</p>
+ -->
+						<form name="locForm" action='#'>
+							<select id="locate" class="form-control">
+								<option value='Delhi'>Delhi</option>
+								<option value='Bengaluru'>Bengaluru</option>
+
+							</select>
+							<button type="button" id="enter-button" data-dismiss="modal">Enter</button>
+						</form>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!--nav bar with links  -->
+
+	<nav class="navbar navbar-inverse  navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">Movies <!-- <span class="caret"></span> --></a>
+						<!-- <ul class="dropdown-menu">
+							<li><a href="#">Page 1-1</a></li>
+							<li><a href="#">Page 1-2</a></li>
+							<li><a href="#">Page 1-3</a></li>
+						</ul> --></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"> Login/Sign Up</a></li>
+					<li><a id="location" data-toggle="modal"
+						data-target="#myModal"></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- end of top nav bar -->
+
+
+	<!-- logo+search bar of the site -->
+	<div class="container-fluid"
+		style="margin: 0%; padding-right: 0%; padding-left: 0%;">
+		<div class="row" style="padding-top: 5%; background-color: #061532">
+			<div class="col-sm-2 col-md-2">
+				<img alt="Silver Screen" id="logoimg"
+					src="../images/silverscreen-logo-white.png" class="pull-left "
+					onmouseover="this.src='../images/silverscreen-logo.png'"
+					onmouseout="this.src='../images/silverscreen-logo-white.png'">
+			</div>
+
+
+			<div class="col-sm-offset-1 col-sm-4 col-md-offset-1 col-md-4">
+
+				<form>
+					<div class="row">
+						<div class="col-sm-10">
+							<a href="#"><input type="search" readonly
+								class="form-control" placeholder="Movies/Cinemas"
+								name="srch-term" id="searchBox"></a>
+						</div>
+						<div class="col-sm-1" style="margin: 0%;">
+							<span class="glyphicon glyphicon-search"></span>
+						</div>
+					</div>
+				</form>
+			</div>
+
+
+		</div>
+	</div>
+	<!-- 
+	<div class="container-fluid" style="padding: 0%; margin:0%;">
+		<div class="logo">
+			<img class="logoimg" src="../images/silverscreen-logo-white.png"
+				onmouseover="this.src='../images/silverscreen-logo.png'"
+				onmouseout="this.src='../images/silverscreen-logo-white.png'" />
+		</div>
+	</div>
+ -->
+	<!-- logo sec finish -->
+
+	<!-- first carousel -->
+	<div class="container-fluid"
+		style="padding: 0%; background-color: #F0F0F0;">
+
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+
+				<div class="item active">
+					<a href="https://en.wikipedia.org/wiki/Happy_Bhag_Jayegi"> <img
+						class="firstcarouselimage" src="../images/flyingjatt.jpg"
+						alt="flyingjatt"></a>
+
+				</div>
+
+				<div class="item">
+
+
+					<a href="https://en.wikipedia.org/wiki/Happy_Bhag_Jayegi"> <img
+						class="firstcarouselimage" src="../images/flyingjatt.jpg"
+						alt="flyingjatt"></a>
+
+				</div>
+
+				<div class="item">
+					<a href="https://en.wikipedia.org/wiki/Happy_Bhag_Jayegi"> <img
+						class="firstcarouselimage" src="../images/flyingjatt.jpg"
+						alt="flyingjatt"></a>
+
+				</div>
+				<div class="item">
+					<a href="https://en.wikipedia.org/wiki/Happy_Bhag_Jayegi"> <img
+						class="firstcarouselimage" src="../images/flyingjatt.jpg"
+						alt="flyingjatt"></a>
+
+				</div>
+
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" role="button"
+				data-slide="prev"> <span
+				class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a> <a class="right carousel-control" href="#myCarousel" role="button"
+				data-slide="next"> <span
+				class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+	<!-- search bar -->
+
+	<!-- <form name="searchForm" action="#" class="col-sm-9 col-sm-offset-3">
+			<input type="search" id="searchBox" autofocus
+				placeholder="Find Movies or Cinemas you like."/>
+			<button type="button" id="searchButton"><span class="glyphicon glyphicon-search"></span></button>
+		</form> -->
+
+	<!-- 
+	<div class="row">
+		<div class="col-sm-offset-4 col-sm-4  col-md-offset-4 col-md-4"
+			style="margin-top: -50%;">
+			<div class="but2">
+				<span class="glyphicon glyphicon-facetime-video"
+					style="margin-left: 5%; margin-right: 5%"></span> <a href="#"><input
+					type="text" readonly placeholder="Cinemas/Movies" width="150%"></a><span
+					class="glyphicon glyphicon-search"
+					style="margin-left: 5%; margin-right: 5%"></span>
+			</div>
+		</div>
+	</div> -->
+	<!-- search bar end -->
+	<!--second section  -->
+	<div class="container-fluid"
+		style="margin-top: 20%; background-color: grey;">
+		<div class="row">
+			<!-- side list -->
+			<div class="col-sm-3 col-md-3" style="padding: 0%;">
+				<div class="well well-sm"
+					style="background-color: 'blue'; padding: 0%;">
+					TOP MOVIES
+					<ul>
+						<li><a href="#">Happy Bhaag Jayegi</a></li>
+						<li><a href="#">Happy Bhaag Jayegi</a></li>
+						<li><a href="#">Happy Bhaag Jayegi</a></li>
+						<li><a href="#">Happy Bhaag Jayegi</a></li>
+						<li><a href="#">Happy Bhaag Jayegi</a></li>
+						<li><a href="#">Happy Bhaag Jayegi</a></li>
+						<li><a href="#">Happy Bhaag Jayegi</a></li>
+						<li><a href="#">Happy Bhaag Jayegi</a></li>
+						<li><a href="#">Happy Bhaag Jayegi</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--side list end  -->
+			<!-- carousel set  -->
+			<div class="col-sm-9" style="padding: 0%; margin: 0%;">
+				<div id="myCarousel1" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel1" data-slide-to="1"></li>
+						<li data-target="#myCarousel1" data-slide-to="2"></li>
+
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<!--1st carousel set  -->
+						<div class="item active">
+
+							<div class=" col-sm-offset-1 col-sm-3 col-md-offset-1 col-md-3">
+								<img src="../images/download.jpg" alt="happy bhaag jayegi"
+									class="carlis"> <a class="scan1"
+									href="https://www.youtube.com/watch?v=9OXFk-pdi6c"><span
+									class="glyphicon glyphicon-play-circle"></span></a> <a href="#"><button
+										class="but" type="button">BOOK NOW</button></a>
+							</div>
+							<div class="col-sm-3 col-md-3">
+								<img src="../images/download.jpg" alt="happy bhaag jayegi"
+									class="carlis"> <a class="scan1"
+									href="https://www.youtube.com/watch?v=9OXFk-pdi6c"><span
+									class="glyphicon glyphicon-play-circle"></span></a> <a href="#"><button
+										class="but" type="button">BOOK NOW</button></a>
+							</div>
+							<div class="col-sm-3 col-md-3">
+								<img src="../images/download.jpg" alt="happy bhaag jayegi"
+									class="carlis"> <a class="scan1"
+									href="https://www.youtube.com/watch?v=9OXFk-pdi6c"><span
+									class="glyphicon glyphicon-play-circle"></span></a> <a href="#"><button
+										class="but" type="button">BOOK NOW</button></a>
+							</div>
+
+						</div>
+
+						<!--2nd carousel set  -->
+
+						<div class="item">
+
+							<div class="col-sm-offset-1 col-sm-3 col-md-offset-1 col-md-3">
+								<img src="../images/download.jpg" alt="happy bhaag jayegi"
+									class="carlis"> <a class="scan1"
+									href="https://www.youtube.com/watch?v=9OXFk-pdi6c"><span
+									class="glyphicon glyphicon-play-circle"></span></a> <a href="#"><button
+										class="but" type="button">BOOK NOW</button></a>
+							</div>
+							<div class="col-sm-3 col-md-3">
+								<img src="../images/download.jpg" alt="happy bhaag jayegi"
+									class="carlis"> <a class="scan1"
+									href="https://www.youtube.com/watch?v=9OXFk-pdi6c"><span
+									class="glyphicon glyphicon-play-circle"></span></a> <a href="#"><button
+										class="but" type="button">BOOK NOW</button></a>
+							</div>
+							<div class="col-sm-3 col-md-3">
+								<img src="../images/download.jpg" alt="happy bhaag jayegi"
+									class="carlis"> <a class="scan1"
+									href="https://www.youtube.com/watch?v=9OXFk-pdi6c"><span
+									class="glyphicon glyphicon-play-circle"></span></a> <a href="#"><button
+										class="but" type="button">BOOK NOW</button></a>
+							</div>
+
+						</div>
+
+
+						<!--3rd carousel set  -->
+						<div class="item">
+
+							<div class="col-sm-offset-1 col-sm-3 col-md-offset-1 col-md-3">
+								<img src="../images/download.jpg" alt="happy bhaag jayegi"
+									class="carlis"> <a class="scan1"
+									href="https://www.youtube.com/watch?v=9OXFk-pdi6c"><span
+									class="glyphicon glyphicon-play-circle"></span></a> <a href="#"><button
+										class="but" type="button">BOOK NOW</button></a>
+							</div>
+							<div class="col-sm-3 col-md-3">
+								<img src="../images/download.jpg" alt="happy bhaag jayegi"
+									class="carlis"> <a class="scan1"
+									href="https://www.youtube.com/watch?v=9OXFk-pdi6c"><span
+									class="glyphicon glyphicon-play-circle"></span></a> <a href="#"><button
+										class="but" type="button">BOOK NOW</button></a>
+							</div>
+							<div class="col-sm-3 col-md-3">
+								<img src="../images/download.jpg" alt="happy bhaag jayegi"
+									class="carlis"> <a class="scan1"
+									href="https://www.youtube.com/watch?v=9OXFk-pdi6c"><span
+									class="glyphicon glyphicon-play-circle"></span></a> <a href="#"><button
+										class="but" type="button">BOOK NOW</button></a>
+							</div>
+
+						</div>
+
+						<!-- left right controls -->
+						<a class="left carousel-control" href="#myCarousel1" role="button"
+							data-slide="prev"> <span
+							class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a> <a class="right carousel-control" href="#myCarousel1"
+							role="button" data-slide="next"> <span
+							class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!--footer  -->
+	<div class="lasttab">
+		<div class="container-fluid"
+			style="margin-left: 0%; margin-right: 0%; padding: 0%;">
+
+			<div class="row">
+				<div class="col-sm-offset-1 col-sm-3 col-md-offset-1 col-md-3">
+
+					<span class="glyphicon glyphicon-user"></span> <a href="#"
+						class="forlink">Contact Us</a>
+
+				</div>
+				<div class="col-sm-offset-1 col-md-offset-1 col-sm-1 col-md-1">
+
+
+					<a href="#" class="forsocial"><span
+						class=" fa fa-facebook-square"></span></a> <a href="#"
+						class="forsocial"><span class="fa fa-twitter-square "></span></a>
+					<a href="#" class="forsocial"><span
+						class="fa fa-linkedin-square"></span></a>
+
+				</div>
+
+
+				<div class="col-sm-offset-3 col-md-offset-3 col-sm-3 col-md-3">
+
+
+					<span class="glyphicon glyphicon-phone"></span> <a href="#"
+						class="forlink">Resend Confirmation</a>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

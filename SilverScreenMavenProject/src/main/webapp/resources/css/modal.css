@@ -1,0 +1,34 @@
+.modal-header {
+	background-color: #061532;
+	color: #49ba8e;
+	font-size: large;
+}
+
+.modalcontent {
+	font-size: large;
+	text-align: center;
+}
+
+#closeButton {
+	background-color: #061532;
+	color: #49ba8e;
+	border: none;
+}
+
+#formSubmit {
+	width: 100%;
+	text-align: center;
+	background: #CC0000;
+	border: none;
+	color: white;
+}
+
+#enter-button {
+	background-color: #061532;
+	color: #49ba8e;
+	border: none;
+	font-size: medium;
+	padding: 5px;
+	border-radius: 5px;
+	float: right;
+}
